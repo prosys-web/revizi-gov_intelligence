@@ -156,7 +156,7 @@ function pncpControls(){
  '<select id="pncpPageSize" aria-label="Registros por página">'+[25,50,100].map(n=>'<option value="'+n+'"'+(n===pncpPageSize?' selected':'')+'>'+n+' por página</option>').join('')+'</select>'+
  btn('Limpar filtros','pncpClear()')+'</div>';
 }
-function pncpRadarRows(arr){return arr.map(x=>'<tr><td><strong>'+esc(x.objeto||'Sem descrição')+'</strong><small>'+esc(x.orgao||'Órgão não informado')+' · '+esc(x.numero_pncp||'—')+'</small></td><td>'+esc(x.uf||'—')+'<small>'+esc(x.municipio||'—')+'</small></td><td>'+esc(pncpModalities[x.modalidade]||'Não informada')+'</td><td>'+pncpValue(x.valor_estimado)+'</td><td>'+pncpDay(x.publicacao)+'</td><td>'+btn('Detalhar','pncpOpen('+JSON.stringify(x.numero_pncp)+')','primary')+'</td></tr>').join('')||'<tr><td colspan="6" class="empty">Nenhum registro atende aos filtros.</td></tr>'}
+function pncpRadarRows(arr){return arr.map(x=>'<tr><td><strong>'+esc(x.objeto||'Sem descrição')+'</strong><small>'+esc(x.orgao||'Órgão não informado')+' · '+esc(x.numero_pncp||'—')+'</small></td><td>'+esc(x.uf||'—')+'<small>'+esc(x.municipio||'—')+'</small></td><td>'+esc(pncpModalities[x.modalidade]||'Não informada')+'</td><td>'+pncpValue(x.valor_estimado)+'</td><td>'+pncpDay(x.publicacao)+'</td><td>'+btn('Detalhar',"pncpOpen('"+pncpTxt(x.numero_pncp).replace(/[^0-9A-Za-z\/_-]/g,'')+"')",'primary')+'</td></tr>').join('')||'<tr><td colspan="6" class="empty">Nenhum registro atende aos filtros.</td></tr>'}
 function renderRadarPNCP(){
  const filtered=pncpFiltered(),pages=Math.max(1,Math.ceil(filtered.length/pncpPageSize));pncpPage=Math.max(1,Math.min(pncpPage,pages));
  const rows=filtered.slice((pncpPage-1)*pncpPageSize,pncpPage*pncpPageSize);
