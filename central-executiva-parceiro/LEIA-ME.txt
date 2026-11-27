@@ -1,0 +1,10 @@
+REVIZI · Central Executiva para parceiro financeiro · V0.3
+
+1. Abra index.html no navegador.
+2. Utilize os cards "Apresentação Comercial", "Simulador Financeiro", "GOV Intelligence" e "Mockup da Jornada Final".
+3. O mockup.html usa dados inteiramente fictícios de dispensas e não consulta o PNCP nem transmite lances.
+4. A amostra do radar exibida em index.html contém pregões históricos do Ceará, e não dispensas atuais.
+5. O simulador.html contém cenários hipotéticos; o Simples Nacional é uma estimativa didática.
+6. Prazo de 60 dias: meta de integração e homologação, sujeita a validação técnica e regulatória.
+
+Arquivos HTML estáticos, sem dependências externas. Mantenha todos na mesma pasta, pois usam links relativos.
