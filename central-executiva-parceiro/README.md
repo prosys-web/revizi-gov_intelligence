@@ -1,4 +1,4 @@
-# REVIZI — Central Executiva para Parceiro Financeiro (V0.3)
+# REVIZI — Central Executiva para Parceiro Financeiro (V0.4)
 
 **Material demonstrativo | 27/11/2026 | ambiente separado do GOV Intelligence operacional**
 
@@ -9,7 +9,7 @@ Abra [index.html](./index.html) no navegador. A página inicial oferece quatro a
 1. **Apresentação Comercial** — sete lâminas internas de narrativa comercial; duração proposta de até 10 minutos.
 2. **Simulador Financeiro** — [simulador.html](./simulador.html), margens, capital, quantidade e valor de contratos, custos, tributos projetados e caixa.
 3. **GOV Intelligence** — demonstração no `index.html` com recorte histórico de pregões do Ceará obtidos em 25/11/2026. Os registros não são dispensas nem atualização em tempo real.
-4. **Mockup da Jornada Final** — [mockup.html](./mockup.html), com três dispensas **inteiramente fictícias** e sete etapas: radar; edital e TR; habilitação; fornecedores; precificação; robô de lances supervisionado; execução e recebimento.
+4. **Mockup da Jornada Final** — [mockup.html](./mockup.html), com 24 oportunidades demonstrativas navegáveis, classificação por aderência e oito etapas: radar; edital/TR; itens e lotes; habilitação; fornecedores; precificação; robô de lances supervisionado; execução e recebimento.
 
 ## Escopo e limites
 
@@ -23,13 +23,17 @@ Abra [index.html](./index.html) no navegador. A página inicial oferece quatro a
 
 ## Segurança e governança
 
-Não incluir credenciais, dados pessoais ou informações privadas de clientes neste diretório. Avaliar e auditar qualquer dependência ou código externo antes de sua incorporação. Preservar a identificação visível de dados fictícios e de funcionalidades ainda em desenvolvimento.
+Não incluir credenciais, dados pessoais ou informações privadas de clientes neste diretório. Avaliar e auditar qualquer dependência ou código externo antes de sua incorporação. Preservar um aviso claro e único no início do mockup sobre a natureza simulada dos dados e funcionalidades em desenvolvimento.
 
 ## Arquivos
 
 - `index.html` — Central Executiva e apresentação comercial
 - `simulador.html` — simulador financeiro
-- `mockup.html` — mockup navegável de ponta a ponta
+- `mockup.html` — radar navegável com 24 processos, filtros, análise documental, itens e lotes, fornecedores, decisão, lances e execução
 - `LEIA-ME.txt` — instruções de uso do pacote original
 
 **Responsável pelo projeto:** REVIZI | GOV Intelligence.
+
+## Referência de desenho
+
+O radar reutiliza a lógica de tabela, filtros e aprofundamento do GOV Intelligence anterior e padrões de organização de painéis operacionais já utilizados em projetos reais. **Não utiliza dados privados ou transações da ARILUB**: todos os processos e números do mockup são gerados para demonstração.
